@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background: #f3f3f3;
+  color: #333;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+  text-rendering: optimizeLegibility;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat.ttf);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #ddd;
+}
+
+a {
+  color: #474747;
+  transition: color 0.15s;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+}
+
+h1 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  margin-top: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.floating-card {
+  position: relative;
+  margin: 16px auto;
+  padding: 24px 16px;
+  background: #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2em;
+  width: calc(100% - 32px);
+  max-width: 350px;
+}
+
+.password {
+  width: 100%;
+  padding: 12px;
+  background: #08c;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background 0.3s;
+}
+
+.password:before {
+  content: "Password: ";
+  opacity: 0.7;
+}
+
+.password:hover {
+  background: rgba(0, 136, 204, 0.8);
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.field label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+  font-weight: 300;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid #08c;
+  transition: background 0.3s;
+}
+
+.field input:focus,
+.field select:focus {
+  background: #eee;
+  outline: none;
+}
+
+.field button {
+  border: none;
+  background: #08c;
+  color: #fff;
+  padding: 12px 16px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.field button:hover,
+.field button:focus {
+  background: rgba(0, 136, 204, 0.8);
+}
+
+.select2 {
+  width: 100% !important;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
